@@ -1,60 +1,90 @@
-html{
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-#intro {
-height: calc(100vh -4em);
-width: 100vw;
-max-width: 75em;
-margin: 0 auto;
-overflow: hidden;
-position: relative;
-font-size:x-large;
+
+#works {
+    text-align: center;
+    padding: 5px; 
+    margin: 0;
 }
 
-.bg{
-    position:absolute;
-    top: -4em;
-    right: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: 100vh;
+.worksTitle {
+    font-size: 1.2rem; 
+    margin-bottom: 5px; 
 }
 
-.introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2em;
-    font-size: 3em;
-    font-weight: 700;
+.worksDesc {
+    font-size: 0.9rem; 
+    margin-bottom: 10px; 
+}
+
+
+.worksImgs {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    gap: 5px; 
 }
 
-.hello {
-    font-size: 1.75rem;
-    font-weight:100;
+
+.worksImg {
+    width: 80px; 
+    height: auto;
+    border-radius: 5px; /
+    transition: transform 0.2s;
 }
 
-.introName {
-    color: yellow;
+.worksImg:hover {
+    transform: scale(1.05); 
 }
 
-.introPara {
-    font-size: medium;
-    font-weight: 100;
-}
 
-.btn {
-    background: white;
-    margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
+.workBtn {
+    margin-top: 10px; 
+    padding: 5px 10px; 
+    font-size: 0.8rem; 
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.btnImg{
-    
+.workBtn:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .worksTitle {
+        font-size: 1rem; 
+    }
+
+    .worksDesc {
+        font-size: 0.8rem; 
+    }
+
+    .worksImg {
+        width: 70px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .worksTitle {
+        font-size: 0.9rem; 
+    }
+
+    .worksDesc {
+        font-size: 0.75rem; 
+    }
+
+    .worksImgs {
+        justify-content: center; 
+
+    .worksImg {
+        width: 60px; 
+    }
+
+    .workBtn {
+        font-size: 0.7rem;
+        padding: 4px 8px; 
+    }
 }

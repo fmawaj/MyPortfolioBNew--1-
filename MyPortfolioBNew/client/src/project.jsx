@@ -13,20 +13,18 @@ export default function Project() {
      <section id="works">
          
           <h2 className="worksTitle">My Projects</h2>
-          <span className="worksDesc">I take pride in paying attention to the smallest details and making sure my work is pixel perfect/ 
-          I am excited to bring my skills and experience to help businesses achieve their goals and create a strong online presence.</span> 
+          <span className="worksDesc">I wish to have the opportunity to work on
+                projects that help businesses achieve their goals and create a strong online presence.</span> 
           <div className="worksImgs">
                    <img src={project1} alt="project1" className="worksImg" />
-                   <img src={project2} alt="project2" className="worksImg" />
-                   <img src={project3} alt="project3" className="worksImg" />
+                   <img src={project2} alt="project2" className="worksImg" />              
                    <img src={project4} alt="project4" className="worksImg" />
-                   <img src={project5} alt="project5" className="worksImg" />
-                   <img src={project6} alt="project6" className="worksImg" />
+                   
                   
                
                </div>
 
-          <button className="workBtn">See More</button>
+         
                   
                   
      </section>
